@@ -79,19 +79,9 @@ body {
     border-bottom: 4px solid #dfc18d;
 }
 
-#carousel-slide {
-    margin-top: 40px;
-    max-width: 800px;
-    max-height: 400px;
-}
-
-.carousel-item {
-    width: 800px;
-    height: 400px;
-}
-
-section {
-    margin: 20px auto;
+.carousel-img {
+    min-height:450px;
+    max-height:450px;
 }
 
 table {
@@ -108,4 +98,54 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+/*estilo carousel*/
+.carousel,
+.item,
+.active {
+height: 100%;
+height: 500px;
+}
+.item img{
+width: 100%;
+height: 600px;
+}
+a.left{
+box-shadow: 0px;
+}
+a.left:hover{
+box-shadow: 0px;
+}
+.carousel-inner {
+height: 100%;
+}
+
+.tabela_classificacao{
+    width:500px;
+    border:4px solid #0662ad;
+}
+
+.tabela_classificacao thead th{
+	background-color:#022744;    
+    color:white;
+}
+
+.tabela_classificacao td{
+    font-weight:bold;
+    color: white;
+}
+
+.tabela_classificacao tr:nth-child(odd) {
+	background-color:#0662ad;
+}
+.tabela_classificacao tr:nth-child(even) {
+    background-color:#022744;
+}
+
+
+
+.carrosel {
+    background-color: #0662ad;
+    width:100%
 }
