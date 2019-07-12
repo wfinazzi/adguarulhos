@@ -17,7 +17,7 @@ body {
 
 .logo-svg {
     background-color: #eac67a;
-    border-radius: 50% ;
+    border-radius: 50%;
     width: 98px;
     height: 98px;
     margin-left: 150px;
@@ -119,6 +119,7 @@ a.left:hover {
     background-color: white;
     width: 100%
 }
+
 /* fim estilo carrossel */
 
 /* início titulos da página */
@@ -127,6 +128,7 @@ a.left:hover {
     border-bottom: 3px solid #eac67a;
     margin: 10px auto;
 }
+
 /* fim titulos da página */
 
 /* início estilo tabela classificação */
@@ -172,3 +174,12 @@ th {
 }
 
 /* fim estilo tabela classificação */
+
+/* inicio patrocinadores */
+.img-patrocinador {
+    margin: 20px 30px;
+    width: 250px;
+    height: 200px;
+}
+
+/* fim patrocinadores */
