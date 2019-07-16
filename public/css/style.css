@@ -176,10 +176,75 @@ th {
 /* fim estilo tabela classificação */
 
 /* inicio patrocinadores */
-.img-patrocinador {
+img.img-patrocinador {
     margin: 20px 30px;
     width: 125px;
     height: 100px;
 }
 
 /* fim patrocinadores */
+
+/* início footer */
+footer {
+    border-top: 5px solid #E2BE76;
+    margin-top: 50px;
+    padding-top: 0px;
+    background-color: #0662AD;
+    color: white;
+}
+
+h4.titulo-footer {
+    text-align: left;
+}
+
+div.texto-footer {
+    font-size: 14px;
+}
+
+div.container-footer {
+    border-top: 3px solid #E2BE76;
+    height: 50px;
+}
+
+ul.menu-footer {
+    list-style-type: none;
+    display: block;
+    margin: -50px auto;
+}
+
+ul.menu-footer li {
+    text-align: center;
+    display: inline-block;
+    margin: 0px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 125px;
+}
+
+.menu-footer li:hover{
+    transition: 0.5s;
+    background-color: #E2BE76;
+    color: #0662AD;
+}
+
+div.copyright {
+    border-top: 2px solid #E2BE76;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    padding: 10px;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer a:hover{
+    color: #E2BE76;
+    text-decoration: none;
+}
+/* fim footer */
