@@ -4,19 +4,19 @@ body {
 
 .menu-barra-superior {
     height: 84px;
-    background-color: #286da8;
+    background-color: #0662AD;
     display: flex;
 }
 
 .menu-barra-inferior {
     height: 48px;
-    background-color: #eac67a;
+    background-color: #E2BE76;
     display: flex;
-    border-bottom: 4px solid #286da8;
+    border-bottom: 4px solid #0662AD;
 }
 
 .logo-svg {
-    background-color: #eac67a;
+    background-color: #E2BE76;
     border-radius: 50%;
     width: 98px;
     height: 98px;
@@ -75,10 +75,10 @@ body {
 
 .barra_navegacao_links li:hover {
     transition: 0.5s;
-    background-color: #286da8;
-    color: #eac67a;
+    background-color: #0662AD;
+    color: #E2BE76;
     width: 120px;
-    border-bottom: 4px solid #eac67a;
+    border-bottom: 4px solid #E2BE76;
 }
 
 /* início estilo carrossel */
@@ -124,8 +124,8 @@ a.left:hover {
 
 /* início titulos da página */
 .titulo-site {
-    color: #286da8;
-    border-bottom: 3px solid #eac67a;
+    color: #0662AD;
+    border-bottom: 3px solid #E2BE76;
     margin: 10px auto;
 }
 
@@ -137,26 +137,26 @@ a.left:hover {
     border-collapse: collapse;
     width: 400px;
     margin: 20px auto;
-    border: 1px solid #286da8;
+    border: 1px solid #0662AD;
     float: left;
 }
 
 td,
 th {
     padding: 12px;
-    border-bottom: #286da8 solid 1px;
+    border-bottom: #0662AD solid 1px;
     font-size: 14px;
 }
 
 .tabela_classificacao thead th {
-    background-color: #286da8;
+    background-color: #0662AD;
     color: white;
     font-size: 16px;
 }
 
 .tabela_classificacao td {
     font-weight: bold;
-    color: #286da8;
+    color: #0662AD;
 }
 
 .tabela-titulo {
