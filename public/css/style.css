@@ -2,6 +2,10 @@ body {
     margin: 0 auto;
 }
 
+section.secao {
+    margin: 30px auto;
+}
+
 .menu-barra-superior {
     height: 84px;
     background-color: #0662AD;
@@ -82,48 +86,31 @@ body {
 }
 
 
-section.secao{
-    margin: 30px auto;
-}
 /* início estilo carrossel */
-.carousel-img {
-    min-height: 450px;
-    max-height: 450px;
+img.carousel-img {
+    height: 100%;
+    width: 100%;
 }
 
-.carousel,
-.item,
+.carousel-item,
 .active {
     height: 100%;
     height: 500px;
-}
-
-.slide {
-    margin: 10px auto;
-}
-
-.item img {
     width: 100%;
-    height: 600px;
 }
 
-a.left {
+a.carrossel-botao {
     box-shadow: 0px;
 }
 
-a.left:hover {
+a.carrossel-botao:hover {
     box-shadow: 0px;
-}
-
-.carousel-inner {
-    height: 100%;
 }
 
 .carrosel {
-    background-color: white;
     width: 100%
 }
-/* fim estilo carrossel */
+
 
 /* início titulos da página */
 div.titulo-site {
@@ -136,10 +123,10 @@ div.titulo-site {
 span.titulo-pagina {
     text-transform: uppercase;
 }
-/* fim titulos da página */
+
 
 /* início estilo tabela classificação */
-div.bloco-tabela{
+div.bloco-tabela {
     margin: 0px auto;
 }
 
@@ -181,7 +168,6 @@ th {
     text-align: left;
 }
 
-/* fim estilo tabela classificação */
 
 /* inicio patrocinadores */
 div.patrocinadores {
@@ -196,7 +182,6 @@ img.img-patrocinador {
     height: 100px;
 }
 
-/* fim patrocinadores */
 
 /* início footer */
 footer {
@@ -267,5 +252,3 @@ div.copyright {
     display: block;
     padding: 0px auto 10px auto;
 }
-
-/* fim footer */
