@@ -81,6 +81,10 @@ body {
     border-bottom: 4px solid #E2BE76;
 }
 
+
+section.secao{
+    margin: 30px auto;
+}
 /* início estilo carrossel */
 .carousel-img {
     min-height: 450px;
@@ -119,32 +123,33 @@ a.left:hover {
     background-color: white;
     width: 100%
 }
-
 /* fim estilo carrossel */
 
 /* início titulos da página */
 div.titulo-site {
     text-align: center;
-    width: 85%;
     color: #0662AD;
     border-bottom: 3px solid #E2BE76;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 span.titulo-pagina {
     text-transform: uppercase;
 }
-
 /* fim titulos da página */
 
 /* início estilo tabela classificação */
-.tabela_classificacao {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 400px;
-    margin: 20px auto;
+div.bloco-tabela{
+    margin: 0px auto;
+}
+
+table.tabela-classificacao {
+    margin: 0px auto;
     border: 1px solid #0662AD;
-    float: left;
+}
+
+.tabela-titulo {
+    text-align: center;
 }
 
 td,
@@ -154,20 +159,17 @@ th {
     font-size: 14px;
 }
 
-.tabela_classificacao thead th {
+.tabela-classificacao th {
     background-color: #0662AD;
     color: white;
     font-size: 16px;
 }
 
-.tabela_classificacao td {
+.tabela-classificacao td {
     font-weight: bold;
     color: #0662AD;
 }
 
-.tabela-titulo {
-    text-align: center;
-}
 
 .col-peq {
     width: 7%;
@@ -185,8 +187,7 @@ th {
 div.patrocinadores {
     display: block;
     text-align: center;
-    margin: 20px auto;
-    width: 80%;
+    margin: 0px auto;
 }
 
 img.img-patrocinador {
