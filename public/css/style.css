@@ -123,10 +123,16 @@ a.left:hover {
 /* fim estilo carrossel */
 
 /* início titulos da página */
-.titulo-site {
+div.titulo-site {
+    text-align: center;
+    width: 85%;
     color: #0662AD;
     border-bottom: 3px solid #E2BE76;
     margin: 10px auto;
+}
+
+span.titulo-pagina {
+    text-transform: uppercase;
 }
 
 /* fim titulos da página */
@@ -176,8 +182,15 @@ th {
 /* fim estilo tabela classificação */
 
 /* inicio patrocinadores */
+div.patrocinadores {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
 img.img-patrocinador {
-    margin: 20px 30px;
+    margin: 0px 25px;
     width: 125px;
     height: 100px;
 }
@@ -191,7 +204,7 @@ footer {
     padding-top: 0px;
     background-color: #0662AD;
     color: white;
-    border-bottom: solid #E2BE76 5px; 
+    border-bottom: solid #E2BE76 5px;
 }
 
 footer a {
@@ -205,7 +218,7 @@ footer a:hover {
     text-decoration: none;
 }
 
-div.footer-superior{
+div.footer-superior {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -240,7 +253,7 @@ ul.menu-footer li {
     width: 125px;
 }
 
-.menu-footer li:hover{
+.menu-footer li:hover {
     transition: 0.5s;
     background-color: #E2BE76;
     color: #0662AD;
@@ -253,4 +266,5 @@ div.copyright {
     display: block;
     padding: 0px auto 10px auto;
 }
+
 /* fim footer */
