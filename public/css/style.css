@@ -6,35 +6,30 @@ section.secao {
     margin: 30px auto;
 }
 
+
+/* início barra superior */
 .menu-barra-superior {
-    height: 84px;
+    height: 75px;
     background-color: #0662AD;
     display: flex;
-}
-
-.menu-barra-inferior {
-    height: 48px;
-    background-color: #E2BE76;
-    display: flex;
-    border-bottom: 4px solid #0662AD;
+    border-bottom: 3px solid #E2BE76;
 }
 
 .logo-svg {
     background-color: #E2BE76;
     border-radius: 50%;
-    width: 98px;
-    height: 98px;
-    margin-left: 150px;
-    margin-top: 17px;
-    margin-right: 17px;
+    width: 100px;
+    height: 100px;
+    margin-left: 7.5%;
+    margin-top: 12.5px;
 }
 
 .titulo {
     position: relative;
-    color: #fff;
+    color: white;
     font-weight: 400;
-    font-family: 'Ebrima', sans-serif;
     margin-top: 20px;
+    margin-left: 1%;
     text-transform: uppercase;
     line-height: 10px;
 }
@@ -48,6 +43,31 @@ section.secao {
     margin-bottom: 0;
     font-size: 17px;
     line-height: 18px;
+}
+
+ul.midias-sociais-superior {
+    margin-top: 1.5%;
+    position: absolute;
+    right: 7.5%;
+}
+
+a.fa-superior {
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+a.fa-superior:hover {
+    color: #E2BE76;
+    text-decoration: none;
+}
+
+/* início menu */
+.menu-barra-inferior {
+    height: 50px;
+    background-color: #E2BE76;
+    display: flex;
+    border-bottom: 3px solid #0662AD;
 }
 
 .barra_navegacao {
@@ -79,10 +99,10 @@ section.secao {
 
 .barra_navegacao_links li:hover {
     transition: 0.5s;
-    background-color: #0662AD;
-    color: #E2BE76;
+    color: #0662AD;
     width: 120px;
-    border-bottom: 4px solid #E2BE76;
+    border-bottom: 4px solid #0662AD;
+    text-shadow: none;
 }
 
 
@@ -219,6 +239,16 @@ div.texto-footer {
 
 div.footer-inferior {
     border-top: 3px solid #E2BE76;
+}
+
+ul.midias-sociais-inferior {
+    margin: 0px auto 10px auto;
+    text-align: center;
+}
+
+a.fa-inferior {
+    margin: 20px 20px 0px 20px;
+    font-size: 18px;
 }
 
 ul.menu-footer {
