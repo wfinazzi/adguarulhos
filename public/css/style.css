@@ -145,6 +145,42 @@ span.titulo-pagina {
 }
 
 
+/* início das notícias */
+div.bloco-inferior {
+    margin: 0px auto;
+}
+
+div.noticias {
+    margin: 0px auto;
+}
+
+div.noticia {
+    margin: 30px 20px;
+    display: inline-block;
+}
+
+img.img-noticias {
+    height: 225px;
+    width: 325px;
+}
+
+div.chamada-noticia {
+    width: 325px;
+    border-bottom: 2px solid #E2BE76;
+}
+
+a.texto-noticia {
+    font-size: 16px;
+    color: #0662AD;
+    font-weight: 500;
+    display: block;
+}
+
+a.texto-noticia:hover {
+    text-decoration: none;
+}
+
+
 /* início estilo tabela classificação */
 div.bloco-tabela {
     margin: 0px auto;
