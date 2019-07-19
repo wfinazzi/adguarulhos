@@ -105,6 +105,14 @@ a.fa-superior:hover {
     text-shadow: none;
 }
 
+.barra_navegacao_links a {
+    color: white;
+}
+
+.barra_navegacao_links:hover a {
+    text-decoration: none;
+}
+
 
 /* início estilo carrossel */
 img.carousel-img {
@@ -155,7 +163,7 @@ div.noticias {
 }
 
 div.noticia {
-    margin: 30px 20px;
+    margin: 30px 20px 0px 20px;
     display: inline-block;
 }
 
@@ -238,6 +246,10 @@ img.img-patrocinador {
     height: 100px;
 }
 
+a.link-marcas:hover {
+    text-decoration: none;
+}
+
 
 /* início footer */
 footer {
@@ -317,4 +329,61 @@ div.copyright {
     margin: 0px auto;
     display: block;
     padding: 0px auto 10px auto;
+}
+
+
+/* início do texto do artigo */
+.artigo {
+    margin-left: 200px;
+}
+
+div.patrocinadores-barra-lateral {
+    position: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    width: 125px;
+    right: 20px;
+    top: 0px;
+}
+
+img.img-patrocinador-barra-lateral {
+    margin: 0px;
+    height: 100px;
+    width: 125px;
+    margin-top: 5px;
+}
+
+article.texto{
+    text-align: justify;
+    margin: 20px 60px 0px 20px;
+}
+
+div.imagem-superior {
+    max-width: 100%;
+    width: 550px;
+    float: left;
+    margin-right: 25px;
+    border-bottom: 3px solid #E2BE76;
+}
+
+span.legenda-foto {
+    text-align: center;
+}
+
+p.referencia-foto {
+    margin: 10px auto;
+    
+}
+
+img.imagem-superior {
+    width: 100%;
+}
+
+div.imagem-inferior {
+    max-width: 100%;
+}
+
+img.imagem-inferior {
+    margin: 10px auto 0px -20px;
+    width: 100%;
 }
