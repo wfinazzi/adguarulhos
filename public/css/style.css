@@ -71,16 +71,16 @@ a.fa-superior:hover {
 }
 
 .barra_navegacao {
-    color: #fff;
     font-weight: 600;
     font-family: 'Ebrima', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     margin-left: 220px;
-    text-shadow: black 0.1em 0.1em 0.2em
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .barra_navegacao_links {
+    color: white;
     width: 900px;
     margin: 0 auto;
     position: absolute;
@@ -97,7 +97,7 @@ a.fa-superior:hover {
     text-align: center;
 }
 
-.barra_navegacao_links li:hover {
+li.botão-menu:hover {
     transition: 0.5s;
     color: #0662AD;
     width: 120px;
@@ -105,11 +105,11 @@ a.fa-superior:hover {
     text-shadow: none;
 }
 
-.barra_navegacao_links a {
-    color: white;
+.barra_navegacao a {
+    color: inherit;
 }
 
-.barra_navegacao_links:hover a {
+.barra_navegacao a:hover {
     text-decoration: none;
 }
 
@@ -220,7 +220,6 @@ th {
     font-weight: bold;
     color: #0662AD;
 }
-
 
 .col-peq {
     width: 7%;
@@ -333,17 +332,12 @@ div.copyright {
 
 
 /* início do texto do artigo */
-.artigo {
-    margin-left: 200px;
-}
-
 div.patrocinadores-barra-lateral {
-    position: fixed;
+    border: 2px red solid;
     max-height: 100%;
     max-width: 100%;
     width: 125px;
-    right: 20px;
-    top: 0px;
+    position: relative;
 }
 
 img.img-patrocinador-barra-lateral {
@@ -372,7 +366,6 @@ span.legenda-foto {
 
 p.referencia-foto {
     margin: 10px auto;
-    
 }
 
 img.imagem-superior {
