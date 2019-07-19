@@ -376,3 +376,38 @@ img.imagem-inferior {
     margin: 10px auto 0px -20px;
     width: 100%;
 }
+
+
+/* início dos cards */
+div.card {
+    margin: 10px auto;
+    border: 1.5px #E2BE76 solid;
+    color: #0662AD;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+img.card-img-top {
+    max-width: 300px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    padding: 0.5px;
+}
+
+h5.card-title {
+    font-size: 20px;
+}
+
+p.card-text {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+p.card-text-footer {
+    font-size: 20px;
+    margin: 0px;
+}
