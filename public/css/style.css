@@ -411,3 +411,57 @@ p.card-text-footer {
     font-size: 20px;
     margin: 0px;
 }
+
+
+/* início página de jogos */
+div.colunas-secao {
+    margin: 0px;
+}
+
+li.jogos {
+    margin-top: 10px;
+    padding: 0px;
+    border-bottom: #E2BE76 solid 2px;
+    width: 450px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+div.bloco-superior {
+    margin: auto;
+}
+
+div.placar {
+    margin: auto;
+}
+
+img.escudo {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
+
+span.texto-card {
+    font-weight: bold;
+    color: #0662AD;
+    margin: auto 20px;
+}
+
+table.bloco-inferior {
+    margin: 0px auto;
+    width: 100%;
+    border: inherit;
+}
+
+td.coluna {
+    padding: 5px 0px;
+    width: 30%;
+    text-align: center;
+}
+
+span.texto-card-info {
+    color: #0662AD;
+    font-size: 14px;
+    font-weight: 500;
+}
