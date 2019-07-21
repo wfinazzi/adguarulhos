@@ -475,17 +475,6 @@ article.sub-texto {
     margin-top: 15px;
 }
 
-div.titulo-site-secundario {
-    border-bottom: 2px solid #E2BE76;
-    margin-bottom: 10px;
-}
-
-span.titulo-pagina-secundario {
-    text-transform: uppercase;
-    color: #0662AD;
-    font-size: 26px;
-}
-
 div.imagem-torcida {
     max-width: 100%;
     max-height: 100%;
