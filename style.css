@@ -302,7 +302,11 @@ div.footer-inferior {
 
 ul.midias-sociais-inferior {
     margin: 0px auto 10px auto;
+    padding: 0px;
     text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    display: flex;
 }
 
 a.fa-inferior {
