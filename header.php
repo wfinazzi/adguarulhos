@@ -124,28 +124,28 @@
                 </div>
             </div>
             <div class="menu-barra-inferior">
-                <input type="checkbox" id="btn_menu">
+                <input type="checkbox" id="btn_menu" checked>
                 <label class="btn_menu" for="btn_menu">&#9776;</label>
 
                 <div class="barra_navegacao">
                     <ul class="barra_navegacao_links">
                         <li class="botão-menu">
-                            <a href="adguarulhos.html">A.D. Guarulhos</a>
+                            <a href="adguarulhos.php">A.D. Guarulhos</a>
                         </li>
                         <li  class="botão-menu">
-                            <a href="elenco.html">Elenco</a>
+                            <a href="elenco.php">Elenco</a>
                         </li>
                         <li  class="botão-menu">
-                            <a href="jogos.html">Jogos</a>
+                            <a href="jogos.php">Jogos</a>
                         </li>
                         <li  class="botão-menu">
-                            <a href="seja-socio.html">Seja Sócio</a>
+                            <a href="seja-socio.php">Seja Sócio</a>
                         </li>
                         <li  class="botão-menu">
-                            <a href="grushop.html">Grushop</a>
+                            <a href="grushop.php">Grushop</a>
                         </li>
                         <li  class="botão-menu">
-                            <a href="extras.html">Extras</a>
+                            <a href="extras.php">Extras</a>
                         </li>
                     </ul>
                 </div>

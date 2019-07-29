@@ -38,17 +38,17 @@
 
             <div class="row">
                 <ul class="midias-sociais-inferior">
-                    <li class="list-inline-item">
+                    <li>
                         <a href="https://www.facebook.com/GuarulhosGRU/" class="fa-inferior fa fa-facebook-f"></a>
                     </li>
-                    <li class="list-inline-item">
+                    <li>
                         <a href="https://twitter.com/GuarulhosGRU" class="fa-inferior fa fa-twitter"></a>
                     </li>
-                    <li class="list-inline-item">
+                    <li>
                         <a href="https://www.mercadolivre.com.br/GuarulhosGRU"
                             class="fa-inferior fa fa-handshake-o"></a>
                     </li>
-                    <li class="list-inline-item">
+                    <li>
                         <a href="https://www.instagram.com/guarulhosgru/" class="fa-inferior fa fa-instagram"></a>
                     </li>
                 </ul>
@@ -68,7 +68,7 @@
                 <!-- Footer menu -->
             </div>
             <div class="row copyright">
-                <p>Copyright @2019 | Desenvolvido por <a href="#">Lucas Santana</a> e <a href="#">Wellington Bezerra</a>
+                <p>Copyright @2019 | Desenvolvido por <a href="https://www.linkedin.com/in/lucastssantana">Lucas Santana</a> e <a href="https://www.linkedin.com/in/wellington-almeida-8a0434a5">Wellington Bezerra</a>
                 </p>
             </div>
         </div>

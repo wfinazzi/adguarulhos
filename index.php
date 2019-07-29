@@ -2,7 +2,7 @@
 <?php get_header(); ?>
     <div class="container">
         <section class="secao">
-            <div id="carousel-slide" class="carousel slide">
+            <div id="carousel-slide" class="carousel slide" style="z-index: 0;">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-slide" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-slide" data-slide-to="1"></li>
@@ -296,4 +296,4 @@
             </div>
         </section>
     </div>
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
