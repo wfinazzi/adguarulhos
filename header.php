@@ -8,7 +8,7 @@
 
     <!-- CSS -->
     <link rel="shortcut icon" href="public/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/style.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,9 +26,8 @@
                 <?xml version="1.0" standalone="no"?>
                 <!DOCTYPE svg
                     PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="95.000000pt" height="95.000000pt"
-                    class="logo-svg" viewBox="0 0 225.000000 225.000000" preserveAspectRatio="xMidYMid meet">
-                    <a href="index.html">
+                    <a href="index.php">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="logo-svg" viewBox="0 0 225.000000 225.000000" preserveAspectRatio="xMidYMid meet">
                         <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#0662ad"
                             stroke="none">
                             <path fill="#0662ad" d="M946 2065 c-393 -82 -687 -377 -760 -765 -99 -521 252 -1026 778
@@ -99,8 +98,8 @@
                             <path fill="" d="M1112 388 c2 -15 10 -23 23 -23 13 0 21 8 23 23 3 18 -1 22 -23 22
                     -22 0 -26 -4 -23 -22z" />
                         </g>
-                    </a>
-                </svg>
+                    </svg>
+                </a>
                 <div class="titulo">
                     <h2 class="titulo_nome">Associação Desportiva Guarulhos</h2>
                     <h3 class="titulo_site">Site Oficial</h3>
@@ -108,25 +107,28 @@
 
                 <div>
                     <ul class="midias-sociais-superior">
-                        <li class="list-inline-item">
+                        <li>
                             <a href="https://www.facebook.com/GuarulhosGRU/" class="fa-superior fa fa-facebook-f"></a>
                         </li>
-                        <li class="list-inline-item">
+                        <li>
                             <a href="https://twitter.com/GuarulhosGRU" class="fa-superior fa fa-twitter"></a>
                         </li>
-                        <li class="list-inline-item">
+                        <li>
                             <a href="https://www.mercadolivre.com.br/GuarulhosGRU"
                                 class="fa-superior fa fa-handshake-o"></a>
                         </li>
-                        <li class="list-inline-item">
+                        <li>
                             <a href="https://www.instagram.com/guarulhosgru/" class="fa-superior fa fa-instagram"></a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="menu-barra-inferior">
+                <input type="checkbox" id="btn_menu">
+                <label class="btn_menu" for="btn_menu">&#9776;</label>
+
                 <div class="barra_navegacao">
-                    <ul class="barra_navegacao_links side-nav">
+                    <ul class="barra_navegacao_links">
                         <li class="botão-menu">
                             <a href="adguarulhos.html">A.D. Guarulhos</a>
                         </li>

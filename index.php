@@ -221,48 +221,47 @@
                         <tr>
                             <td class="col-peq dados-classificacao">1</td>
                             <td class="col-times dados-classificacao">MARÍLIA</td>
-                            <td class="col-peq dados-classificacao">7</td>
+                            <td class="col-peq dados-classificacao">8</td>
                             <td class="col-peq dados-classificacao">2</td>
-                            <td class="col-peq dados-classificacao">1</td>
+                            <td class="col-peq dados-classificacao">2</td>
                             <td class="col-peq dados-classificacao">0</td>
-                            <td class="col-peq dados-classificacao">4</td>
-                            <td class="col-peq dados-classificacao">2</td>
+                            <td class="col-peq dados-classificacao">5</td>
+                            <td class="col-peq dados-classificacao">3</td>
                             <td class="col-peq dados-classificacao">2</td>
                         </tr>
                         <tr>
                             <td class="col-peq dados-classificacao">2</td>
+                            <td class="col-times dados-classificacao">GUARULHOS</td>
+                            <td class="col-peq dados-classificacao">6</td>
+                            <td class="col-peq dados-classificacao">2</td>
+                            <td class="col-peq dados-classificacao">0</td>
+                            <td class="col-peq dados-classificacao">2</td>
+                            <td class="col-peq dados-classificacao">7</td>
+                            <td class="col-peq dados-classificacao">7</td>
+                            <td class="col-peq dados-classificacao">0</td>
+                        </tr>
+                        <tr>
+                            <td class="col-peq dados-classificacao">3</td>
+                            <td class="col-times dados-classificacao">RIO BRANCO</td>
+                            <td class="col-peq dados-classificacao">4</td>
+                            <td class="col-peq dados-classificacao">1</td>
+                            <td class="col-peq dados-classificacao">1</td>
+                            <td class="col-peq dados-classificacao">2</td>
+                            <td class="col-peq dados-classificacao">7</td>
+                            <td class="col-peq dados-classificacao">5</td>
+                            <td class="col-peq dados-classificacao">2</td>
+                        </tr>
+                        <tr>
+                            <td class="col-peq dados-classificacao">4</td>
                             <td class="col-times dados-classificacao">JOSEENSE</td>
                             <td class="col-peq dados-classificacao">4</td>
                             <td class="col-peq dados-classificacao">1</td>
                             <td class="col-peq dados-classificacao">1</td>
                             <td class="col-peq dados-classificacao">1</td>
-                            <td class="col-peq dados-classificacao">4</td>
-                            <td class="col-peq dados-classificacao">7</td>
-                            <td class="col-peq dados-classificacao">-3</td>
-                        </tr>
-                        <tr>
-                            <td class="col-peq dados-classificacao">3</td>
-                            <td class="col-times dados-classificacao">RIO BRANCO</td>
-                            <td class="col-peq dados-classificacao">3</td>
-                            <td class="col-peq dados-classificacao">1</td>
-                            <td class="col-peq dados-classificacao">0</td>
-                            <td class="col-peq dados-classificacao">2</td>
                             <td class="col-peq dados-classificacao">6</td>
-                            <td class="col-peq dados-classificacao">4</td>
-                            <td class="col-peq dados-classificacao">2</td>
+                            <td class="col-peq dados-classificacao">10</td>
+                            <td class="col-peq dados-classificacao">-4</td>
                         </tr>
-                        <tr>
-                            <td class="col-peq dados-classificacao">4</td>
-                            <td class="col-times dados-classificacao">GUARULHOS</td>
-                            <td class="col-peq dados-classificacao">3</td>
-                            <td class="col-peq dados-classificacao">1</td>
-                            <td class="col-peq dados-classificacao">0</td>
-                            <td class="col-peq dados-classificacao">2</td>
-                            <td class="col-peq dados-classificacao">4</td>
-                            <td class="col-peq dados-classificacao">5</td>
-                            <td class="col-peq dados-classificacao">-1</td>
-                        </tr>
-
                     </tbody>
                 </table>
             </div>
