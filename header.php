@@ -7,14 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- CSS -->
-    <link rel="shortcut icon" href="public/favicon.ico" />
+    <link rel="shortcut icon" href="<?php bloginfo("template_directory"); ?>/public/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/style.css">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="<?php bloginfo("template_directory"); ?>/public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JS -->
-    <script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/public/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/public/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/public/js/jquery-3.3.1.min.js">
+    </script>
+    <script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/public/bootstrap/js/bootstrap.min.js">
+    </script>
 
     <title>Document</title>
 </head>
@@ -26,8 +29,8 @@
                 <?xml version="1.0" standalone="no"?>
                 <!DOCTYPE svg
                     PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-                    <a href="index.php">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="logo-svg" viewBox="0 0 225.000000 225.000000" preserveAspectRatio="xMidYMid meet">
+                <a href="index.php" class="logo-svg">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.000000 225.000000" preserveAspectRatio="xMidYMid meet">
                         <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#0662ad"
                             stroke="none">
                             <path fill="#0662ad" d="M946 2065 c-393 -82 -687 -377 -760 -765 -99 -521 252 -1026 778
@@ -107,17 +110,17 @@
 
                 <div>
                     <ul class="midias-sociais-superior">
-                        <li>
+                        <li class="list-inline-item">
                             <a href="https://www.facebook.com/GuarulhosGRU/" class="fa-superior fa fa-facebook-f"></a>
                         </li>
-                        <li>
+                        <li class="list-inline-item">
                             <a href="https://twitter.com/GuarulhosGRU" class="fa-superior fa fa-twitter"></a>
                         </li>
-                        <li>
+                        <li class="list-inline-item">
                             <a href="https://www.mercadolivre.com.br/GuarulhosGRU"
                                 class="fa-superior fa fa-handshake-o"></a>
                         </li>
-                        <li>
+                        <li class="list-inline-item">
                             <a href="https://www.instagram.com/guarulhosgru/" class="fa-superior fa fa-instagram"></a>
                         </li>
                     </ul>
@@ -128,28 +131,10 @@
                 <label class="btn_menu" for="btn_menu">&#9776;</label>
 
                 <div class="barra_navegacao">
-                    <ul class="barra_navegacao_links">
-                        <li class="botão-menu">
-                            <a href="adguarulhos.php">A.D. Guarulhos</a>
-                        </li>
-                        <li  class="botão-menu">
-                            <a href="elenco.php">Elenco</a>
-                        </li>
-                        <li  class="botão-menu">
-                            <a href="jogos.php">Jogos</a>
-                        </li>
-                        <li  class="botão-menu">
-                            <a href="seja-socio.php">Seja Sócio</a>
-                        </li>
-                        <li  class="botão-menu">
-                            <a href="grushop.php">Grushop</a>
-                        </li>
-                        <li  class="botão-menu">
-                            <a href="extras.php">Extras</a>
-                        </li>
-                    </ul>
+                    <?php wp_nav_menu(
+                        array('theme_location' => 'header_menu')
+                    ); ?>
                 </div>
-
             </div>
         </nav>
     </section>

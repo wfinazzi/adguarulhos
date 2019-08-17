@@ -27,9 +27,8 @@
                     <!-- Newsletter -->
                 </div>
                 <div class="col-sm-4 col-md col-sm-4  col-12 col">
-                    <h4 class="titulo-footer">Contact Us</h4>
+                    <h4 class="titulo-footer">Entre em Contato:</h4>
                     <div class="mb-2 texto-footer">
-
                         <p><span>E-mail:</span> comunicacaoadguarulhos@gmail.com</p>
                     </div>
                     <!-- Contact -->

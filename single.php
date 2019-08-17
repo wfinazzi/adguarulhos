@@ -1,12 +1,11 @@
 <?php get_header(); ?>
- 
-
- 
-
-
 <div class="container d-flex">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="col-10">
+            <?php if ( has_post_thumbnail() ) {
+                        the_post_thumbnail();
+                    }
+            ?> 
             <section class="secao">
                 <div class="row titulo-site">
                     <h1>
