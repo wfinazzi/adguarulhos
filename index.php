@@ -36,7 +36,6 @@
                 <?php endwhile; ?>
             </div>
             <?php wp_reset_query(); ?>
-            <?php endif; ?>
 
             <a class="carousel-control-prev carrossel-botao" href="#carousel-slide" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -46,7 +45,11 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Próximo</span>
             </a>
+            <?php else: ?>
+            <h1>Não temos nenhuma postagem marcada com "Importante" em Destaques no momento.</h1>
             <?php endif; ?>
+        </div>
+        <?php endif; ?>
     </section>
 
     <section class="secao">
@@ -56,8 +59,8 @@
             </h1>
         </div>
 
+        <?php if(have_posts()): ?>
         <div class="noticias">
-            <?php if(have_posts()): ?>
             <div class="bloco-inferior row">
                 <?php 
                     $argumentos = array(
@@ -83,14 +86,16 @@
                         </div>
                     </div>
 
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
 
                 </div>
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
             </div>
-            <?php endif; ?>
         </div>
+        <?php else: ?>
+        <h1>Não temos nenhuma postagem marcada como "Matéria" em Destaques no momento.</h1>
+        <?php endif; ?>
     </section>
 
     <section class="secao">
@@ -274,30 +279,17 @@
         </div>
 
         <div class="row patrocinadores">
-            <a href="https://www.generalbrands.com.br/nossas_marcas/camp" target="_blank" class="link-marcas">
-                <img class="img-patrocinador"
-                    src="<?php bloginfo("template_directory"); ?>/public/img/patrocinadores/camp.png" />
+            <?php query_posts(array('post_type' => array('patrocinador'))); ?>
+            <?php if(have_posts()): ?>
+            <?php while(have_posts()): ?>
+            <?php the_post(); ?>
+            <a href="<?php the_field('site_do_patrocinador'); ?>" target="_blank" class="link-marcas">
+                <img class="img-patrocinador" src="<?php the_field('imagem_do_patrocinador'); ?>" />
             </a>
-            <a href="https://www.karina.com.br/" target="_blank" class="link-marcas">
-                <img class="img-patrocinador"
-                    src="<?php bloginfo("template_directory"); ?>/public/img/patrocinadores/karina.png" />
-            </a>
-            <a href="https://www.perutur.com.br/a-empresa" target="_blank" class="link-marcas">
-                <img class="img-patrocinador"
-                    src="<?php bloginfo("template_directory"); ?>/public/img/patrocinadores/logo-perutur-600x350.png" />
-            </a>
-            <a href="http://www.shoppingbonsucesso.com.br/" target="_blank" class="link-marcas">
-                <img class="img-patrocinador"
-                    src="<?php bloginfo("template_directory"); ?>/public/img/patrocinadores/logo-shopping-bonsucesso-lg.JPG" />
-            </a>
-            <a href="https://www.guarulhos.sp.gov.br/" target="_blank" class="link-marcas">
-                <img class="img-patrocinador"
-                    src="<?php bloginfo("template_directory"); ?>/public/img/patrocinadores/logos_pmg_2017_.jpg" />
-            </a>
-            <a href="https://muracasports.com.br/" target="_blank" class="link-marcas">
-                <img class="img-patrocinador"
-                    src="<?php bloginfo("template_directory"); ?>/public/img/patrocinadores/logotipo-muraca.png" />
-            </a>
+            <?php endwhile; ?>
+            <?php else: ?>
+            <h1>Estamos sem patrocinadores no momento.</h1>
+            <?php endif; ?>
         </div>
     </section>
 </div>
