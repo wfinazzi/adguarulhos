@@ -1,16 +1,12 @@
 <?php get_header(); ?>
  
-
- 
-
-
 <div class="container d-flex">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="col-10">
             <section class="secao">
-            <div class="row titulo-site">
+                <div class="row titulo-site">
                     <h1>
-                        <span class="titulo-pagina">História</span>
+                        <span class="titulo-pagina"><?php the_title(); ?></span>
                     </h1>
                 </div>
                 <article class="texto">
