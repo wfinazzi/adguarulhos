@@ -50,6 +50,9 @@
                     <li>
                         <a href="https://www.instagram.com/guarulhosgru/" class="fa-inferior fa fa-instagram"></a>
                     </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCduGenvRYg0KopQiJUvzbVQ/videos" class="fa-inferior fa fa-youtube-play"></a>
+                    </li>
                 </ul>
             </div>
 

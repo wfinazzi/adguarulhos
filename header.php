@@ -123,6 +123,9 @@
                         <li class="list-inline-item">
                             <a href="https://www.instagram.com/guarulhosgru/" class="fa-superior fa fa-instagram"></a>
                         </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/channel/UCduGenvRYg0KopQiJUvzbVQ/videos" class="fa-superior fa fa-youtube-play"></a>
+                        </li>
                     </ul>
                 </div>
             </div>
