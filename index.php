@@ -25,7 +25,8 @@
             <div class="carousel-inner">
                 <?php while($query->have_posts()): ?>
                 <?php $query->the_post(); ?>
-                <div class="carousel-item<?php $contador_carrossel++; if($contador_carrossel === 1) {echo ' active';} ?>">
+                <div
+                    class="carousel-item<?php $contador_carrossel++; if($contador_carrossel === 1) {echo ' active';} ?>">
                     <?php the_post_thumbnail('post_thumbnail', array('id' => 'carousel-img', 'class' => 'carousel-img', 'alt' => 'First Slide')); ?>
                     <div class="carousel-caption d-none d-md-block">
                         <h3><?php the_title(); ?></h3>
@@ -56,65 +57,40 @@
         </div>
 
         <div class="noticias">
+            <?php if(have_posts()): ?>
             <div class="bloco-inferior row">
+                <?php 
+                    $argumentos = array(
+                        'post_type' => 'post',
+                        'posts_per_page' => 6,
+                        'category_name' => 'Matéria'
+                    );
+                    $query = new WP_Query($argumentos);
+                ?>
+                <?php if($query->have_posts()): ?>
+                <?php $post = $posts[0]; ?>
+                <?php $contador_carrossel = 0; ?>
+                <?php $contador_indicador = 0; ?>
                 <div class="noticias">
 
+                    <?php while($query->have_posts()): ?>
+                    <?php $query->the_post(); ?>
+
                     <div class="noticia">
-                        <img class="img-noticias"
-                            src="<?php bloginfo("template_directory"); ?>/public/img/noticias/treinador-edu-miranda-fpf.jpg" />
+                        <?php the_post_thumbnail('post_thumbnail', array('class' => 'img-noticias')); ?>
                         <div class="chamada-noticia">
-                            <a class="texto-noticia" href="#">Treinador Edu Miranda que se encontra na sede da
-                                Federação Paulista de Futebol</a>
+                            <a class="texto-noticia" href="<?= get_permalink(); ?>"><?= the_title() ?></a>
                         </div>
                     </div>
 
-                    <div class="noticia">
-                        <img class="img-noticias"
-                            src="<?php bloginfo("template_directory"); ?>/public/img/noticias/insper-analise-investimentos.jpg" />
-                        <div class="chamada-noticia">
-                            <a class="texto-noticia" href="#">Guarulhos e Insper fazem parceria para análise e
-                                investimentos no futebol</a>
-                        </div>
-                    </div>
-
-                    <div class="noticia">
-                        <img class="img-noticias"
-                            src="<?php bloginfo("template_directory"); ?>/public/img/noticias/treino-campeonato-sub20-paulista.jpg" />
-                        <div class="chamada-noticia">
-                            <a class="texto-noticia" href="#">Guarulhos se prepara para Paulista Sub-20
-                                da Segunda Divisão.</a>
-                        </div>
-                    </div>
-
-                    <div class="noticia">
-                        <img class="img-noticias"
-                            src="<?php bloginfo("template_directory"); ?>/public/img/noticias/preparacao-sub20-paulista.jpg" />
-                        <div class="chamada-noticia">
-                            <a class="texto-noticia" href="#">Visando o Campeonato Paulista Sub-20 da 2°
-                                Divisão 2019.</a>
-                        </div>
-                    </div>
-
-                    <div class="noticia">
-                        <img class="img-noticias"
-                            src="<?php bloginfo("template_directory"); ?>/public/img/noticias/reapresentação-estadio-cicero-miranda.jpg" />
-                        <div class="chamada-noticia">
-                            <a class="texto-noticia" href="#">Time da Cidade se reapresenta no Cícero
-                                Miranda.</a>
-                        </div>
-                    </div>
-
-                    <div class="noticia">
-                        <img class="img-noticias"
-                            src="<?php bloginfo("template_directory"); ?>/public/img/noticias/guarulhos-perde-de-marilia.jpg" />
-                        <div class="chamada-noticia">
-                            <a class="texto-noticia" href="#">Polêmica na arbitragem, Guarulhos é superado pelo
-                                placar mínimo em Marília-SP.</a>
-                        </div>
-                    </div>
+                <?php endwhile; ?>
 
                 </div>
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
             </div>
+            <?php endif; ?>
+        </div>
     </section>
 
     <section class="secao">
