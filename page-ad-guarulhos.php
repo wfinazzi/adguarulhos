@@ -12,12 +12,6 @@
                 <article class="texto">
                     <div class="imagem-superior">
                         <img class="imagem-superior" src="<?php bloginfo("template_directory"); ?>/public/img/noticias/comemoracao-com-torcida.jpg">
-                        <span class="legenda-foto">
-                            <p class="referencia-foto">
-                                Da arquibancada! - Flamengo 1x2 Guarulhos <br />
-                                Fotos: Agatha Karoline
-                            </p>
-                        </span>
                     </div>
 
                     <p class="texto-pagina">
