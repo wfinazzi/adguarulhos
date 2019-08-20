@@ -46,7 +46,7 @@
                 <span class="sr-only">Próximo</span>
             </a>
             <?php else: ?>
-            <h1>Não temos nenhuma postagem marcada com "Importante" em Destaques no momento.</h1>
+            <h5>Não temos nenhuma postagem marcada com "Importante" em Destaques no momento.</h5>
             <?php endif; ?>
         </div>
         <?php endif; ?>
@@ -88,13 +88,13 @@
 
                     <?php endwhile; ?>
 
+                    <?php else: ?>
+                    <h5>Não temos nenhuma postagem marcada como "Matéria" em Destaques no momento.</h5>
                 </div>
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
             </div>
         </div>
-        <?php else: ?>
-        <h1>Não temos nenhuma postagem marcada como "Matéria" em Destaques no momento.</h1>
         <?php endif; ?>
     </section>
 
@@ -288,7 +288,7 @@
             </a>
             <?php endwhile; ?>
             <?php else: ?>
-            <h1>Estamos sem patrocinadores no momento.</h1>
+            <h5>Estamos sem patrocinadores no momento.</h5>
             <?php endif; ?>
         </div>
     </section>
