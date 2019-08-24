@@ -29,8 +29,12 @@
                     class="carousel-item<?php $contador_carrossel++; if($contador_carrossel === 1) {echo ' active';} ?>">
                     <?php the_post_thumbnail('post_thumbnail', array('id' => 'carousel-img', 'class' => 'carousel-img', 'alt' => 'First Slide')); ?>
                     <div class="carousel-caption d-none d-md-block">
-                        <h3><?php the_title(); ?></h3>
-                        <a><?php the_excerpt(); ?></a>
+                    <a class="link-carrossel" href="<?= get_permalink(); ?>">   
+                        <div> 
+                            <h3><?php the_title(); ?></h3>
+                            <span><?php the_excerpt(); ?></span>
+                        </div>
+                    </a>
                     </div>
                 </div>
                 <?php endwhile; ?>

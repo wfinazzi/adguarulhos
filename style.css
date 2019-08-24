@@ -154,6 +154,20 @@ a.carrossel-botao:hover {
     width: 100%
 }
 
+a.link-carrossel {
+    color: inherit;
+}
+
+a.link-carrossel:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+a.link-carrossel:visited {
+    text-decoration: underline;
+    color: inherit;
+}
+
 
 /* início titulos da página */
 div.titulo-site {
