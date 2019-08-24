@@ -7,7 +7,7 @@
 
 get_header(); ?>
     <div class="container d-flex">
-        <div class="col-10">
+        <div class="conteudo-flex">
             <section class="secao">
                 <div class="row titulo-site">
                     <h1>

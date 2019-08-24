@@ -277,13 +277,28 @@
 
     <section class="secao">
         <div class="row titulo-site">
+            
+        <?php query_posts(array('post_type' => array('patrocinadores'))); ?>
+            <?php if(have_posts()): ?>
+            <?php while(have_posts()): the_post(); $qtd++; ?>
+            <?php endwhile; endif; ?>
+
+        <?php if ($qtd == 1): ?>
+            <h1>
+                <span class="titulo-pagina">Patrocinador</span>
+            </h1>
+        <?php elseif ($qtd >= 2): ?>
             <h1>
                 <span class="titulo-pagina">Patrocinadores</span>
             </h1>
+        <?php else: ?>
+            <h1>
+                <span class="titulo-pagina">Sem Patrocinadores</span>
+            </h1>
+        <?php endif; ?>
         </div>
 
         <div class="row patrocinadores">
-            <?php query_posts(array('post_type' => array('patrocinador'))); ?>
             <?php if(have_posts()): ?>
             <?php while(have_posts()): ?>
             <?php the_post(); ?>

@@ -1,5 +1,5 @@
-<div class="patrocinadores-barra-lateral col-2 d-flex flex-column justify-content-between">
-    <?php query_posts(array('post_type' => array('patrocinador'))); ?>
+<div class="patrocinadores-barra-lateral col-2">
+    <?php query_posts(array('post_type' => array('patrocinadores'))); ?>
     <?php if(have_posts()): ?>
     <?php while(have_posts()): ?>
     <?php the_post(); ?>

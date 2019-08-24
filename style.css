@@ -367,8 +367,16 @@ div.copyright {
 
 /* início do texto do artigo */
 div.patrocinadores-barra-lateral {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
     height: 1000px;
     margin-top: 100px;
+}
+
+div.conteudo-flex {
+    flex: 83.33%;
+    max-width: 83.33%;
 }
 
 img.img-patrocinador-barra-lateral {
@@ -533,6 +541,15 @@ iframe.video-hino {
 @media only screen and (max-width: 768px) {
     span.titulo-pagina {
         font-size: 30px;
+    }
+
+    div.patrocinadores-barra-lateral{
+        display: none;
+    }
+
+    div.conteudo-flex {
+        flex: 100%;
+        max-width: 100%;
     }
 
     /* início da barra superior */

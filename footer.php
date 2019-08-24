@@ -70,7 +70,7 @@
                 <!-- Footer menu -->
             </div>
             <div class="row copyright">
-                <p>Copyright @2019 | Desenvolvido por <a href="https://www.linkedin.com/in/lucastssantana">Lucas Santana</a> e <a href="https://www.linkedin.com/in/wellington-almeida-8a0434a5">Wellington Bezerra</a>
+                <p>Copyright @2019 | Desenvolvido por <a href="https://www.linkedin.com/in/lucastssantana" target="_blank">Lucas Santana</a> e <a href="https://www.linkedin.com/in/wellington-almeida-8a0434a5" target="_blank">Wellington Almeida</a>
                 </p>
             </div>
         </div>
