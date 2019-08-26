@@ -10,4 +10,4 @@
     <?php else: ?>
     <h1>Estamos sem patrocinadores no momento.</h1>
     <?php endif; ?>
-</div>
+</div>  

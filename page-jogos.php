@@ -6,7 +6,8 @@
 
 
 get_header(); ?>
-    <div class="container">
+    <div class="container d-flex">
+    <div class="conteudo-flex">
         <section class="secao">
             <div class="row titulo-site">
                 <h1>
@@ -66,4 +67,7 @@ get_header(); ?>
             </div>
         </section>                
     </div>
+        <?php get_sidebar(); ?>
+
+</div>
 <?php get_footer(); ?>

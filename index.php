@@ -29,12 +29,12 @@
                     class="carousel-item<?php $contador_carrossel++; if($contador_carrossel === 1) {echo ' active';} ?>">
                     <?php the_post_thumbnail('post_thumbnail', array('id' => 'carousel-img', 'class' => 'carousel-img', 'alt' => 'First Slide')); ?>
                     <div class="carousel-caption d-none d-md-block">
-                    <a class="link-carrossel" href="<?= get_permalink(); ?>">   
-                        <div> 
-                            <h3><?php the_title(); ?></h3>
-                            <span><?php the_excerpt(); ?></span>
-                        </div>
-                    </a>
+                        <a class="link-carrossel" href="<?= get_permalink(); ?>">
+                            <div>
+                                <h3><?php the_title(); ?></h3>
+                                <span><?php the_excerpt(); ?></span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <?php endwhile; ?>
@@ -274,42 +274,6 @@
             </table>
         </div>
     </section>
-
-    <section class="secao">
-        <div class="row titulo-site">
-            
-        <?php query_posts(array('post_type' => array('patrocinadores'))); ?>
-            <?php if(have_posts()): ?>
-            <?php while(have_posts()): the_post(); $qtd++; ?>
-            <?php endwhile; endif; ?>
-
-        <?php if ($qtd == 1): ?>
-            <h1>
-                <span class="titulo-pagina">Patrocinador</span>
-            </h1>
-        <?php elseif ($qtd >= 2): ?>
-            <h1>
-                <span class="titulo-pagina">Patrocinadores</span>
-            </h1>
-        <?php else: ?>
-            <h1>
-                <span class="titulo-pagina">Sem Patrocinadores</span>
-            </h1>
-        <?php endif; ?>
-        </div>
-
-        <div class="row patrocinadores">
-            <?php if(have_posts()): ?>
-            <?php while(have_posts()): ?>
-            <?php the_post(); ?>
-            <a href="<?php the_field('site_do_patrocinador'); ?>" target="_blank" class="link-marcas">
-                <img class="img-patrocinador" src="<?php the_field('imagem_do_patrocinador'); ?>" />
-            </a>
-            <?php endwhile; ?>
-            <?php else: ?>
-            <h5>Estamos sem patrocinadores no momento.</h5>
-            <?php endif; ?>
-        </div>
-    </section>
 </div>
+
 <?php get_footer(); ?>
