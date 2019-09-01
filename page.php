@@ -11,8 +11,8 @@
             </div>
             <article class="texto">
                 <?php if (has_post_thumbnail()): ?>
-                <div class="imagem-superior">
-                    <?php the_post_thumbnail('post_thumbnail', array('class' => 'imagem-superior')); ?>
+                <div class="imagem-superior img-responsive">
+                    <?php the_post_thumbnail('post_thumbnail', array('class' => 'imagem-superior img-responsive')); ?>
                 </div>
                 <?php endif; ?>
                 <p class="texto-pagina">

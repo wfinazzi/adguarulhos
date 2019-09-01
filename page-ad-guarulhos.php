@@ -2,7 +2,7 @@
  
 <div class="container d-flex">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <div class="conteudo-flex">
+        <div class="conteudo-flex col-md-9 col-sm-12">
             <section class="secao">
                 <div class="row titulo-site">
                     <h1>
@@ -10,8 +10,8 @@
                     </h1>
                 </div>
                 <article class="texto">
-                    <div class="imagem-superior">
-                        <img class="imagem-superior" src="<?php bloginfo("template_directory"); ?>/public/img/noticias/comemoracao-com-torcida.jpg">
+                    <div class="imagem-superior img-responsive">
+                        <img class="imagem-superior img-responsive" src="<?php bloginfo("template_directory"); ?>/public/img/noticias/comemoracao-com-torcida.jpg">
                     </div>
 
                     <p class="texto-pagina">

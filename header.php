@@ -19,13 +19,14 @@
     <script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/public/bootstrap/js/bootstrap.min.js">
     </script>
 
-    <title>Document</title>
+    <title>Guarulhos GRU</title>
 </head>
 
 <body>
     <section>
         <nav>
             <div class="menu-barra-superior">
+                
                 <?xml version="1.0" standalone="no"?>
                 <!DOCTYPE svg
                     PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">

@@ -28,11 +28,11 @@
                 <div
                     class="carousel-item<?php $contador_carrossel++; if($contador_carrossel === 1) {echo ' active';} ?>">
                     <?php the_post_thumbnail('post_thumbnail', array('id' => 'carousel-img', 'class' => 'carousel-img', 'alt' => 'First Slide')); ?>
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <a class="link-carrossel" href="<?= get_permalink(); ?>">
-                            <div>
+                            <div class="noticia_carrosel">
                                 <h3><?php the_title(); ?></h3>
-                                <span><?php the_excerpt(); ?></span>
+                                <span class="d-none d-md-block"><?php the_excerpt(); ?></span>
                             </div>
                         </a>
                     </div>

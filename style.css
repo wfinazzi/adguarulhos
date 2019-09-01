@@ -155,17 +155,20 @@ a.carrossel-botao:hover {
 }
 
 a.link-carrossel {
-    color: inherit;
+    color: #cccccc;
 }
 
-a.link-carrossel:hover {
-    text-decoration: underline;
-    color: inherit;
+a.link-carrossel:hover {    
+    color: #ffffff;
+    text-decoration: none;
 }
 
 a.link-carrossel:visited {
-    text-decoration: underline;
-    color: inherit;
+    color: #ffffff;
+}
+
+.noticia_carrosel {
+    background-color: rgba(0, 0, 0, 0.7);    
 }
 
 
@@ -189,12 +192,18 @@ div.bloco-inferior {
 }
 
 div.noticias {
-    margin: 0px auto;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 div.noticia {
-    margin: 30px 20px 0px 20px;
-    display: inline-block;
+    width:33%;
+    display: flex; 
+    flex-direction: column;   
+    min-height: 200px;
+    align-items: center;
+    margin-bottom: 2%;    
 }
 
 img.img-noticias {
@@ -203,19 +212,25 @@ img.img-noticias {
 }
 
 div.chamada-noticia {
-    width: 325px;
-    border-bottom: 2px solid #E2BE76;
+    
+    border-top: 2px solid #E2BE76;
+    margin-top: 2%;
+    padding: 1%;
+    width: 88%;
+    text-align: justify;
 }
 
 a.texto-noticia {
     font-size: 16px;
-    color: #0662AD;
+    color:#0662AD;
+    
     font-weight: 500;
     display: block;
 }
 
 a.texto-noticia:hover {
     text-decoration: none;
+    color:#0662AC;    
 }
 
 
@@ -320,6 +335,13 @@ div.texto-footer {
 
 div.footer-inferior {
     border-top: 3px solid #E2BE76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-inferior > .menu {
+    margin-left: 0%;
 }
 
 ul.midias-sociais-inferior {
@@ -334,6 +356,10 @@ ul.midias-sociais-inferior {
 a.fa-inferior {
     margin: 20px 20px 0px 20px;
     font-size: 18px;
+}
+
+.footer-inferior > .menu ul{
+    display: flex;
 }
 
 ul.menu-footer {
@@ -378,11 +404,6 @@ div.patrocinadores-barra-lateral {
     margin-top: 100px;
 }
 
-div.conteudo-flex {
-    flex: 83.33%;
-    max-width: 83.33%;
-}
-
 img.img-patrocinador-barra-lateral {
     margin: 0px;
     height: 100px;
@@ -391,12 +412,14 @@ img.img-patrocinador-barra-lateral {
 }
 
 article.texto {
+    display: flex;
+    flex-direction: column;
     text-align: justify;
 }
 
 div.imagem-superior {
     /* max-width: 100%; */
-    width: 550px;
+    width: 100%;
     height: 400px;
     float: left;
     margin-right: 25px;
@@ -477,6 +500,14 @@ div.bloco-superior {
 
 div.placar {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:33%;
+}
+
+.placar > .texto-card-placar {
+    font-size: 25px;
 }
 
 img.escudo {
@@ -543,6 +574,12 @@ iframe.video-hino {
 }
 
 @media only screen and (max-width: 768px) {
+    div.imagem-superior {
+        /* max-width: 100%; */
+        width: 100%;
+        height: 200px;
+    }
+
     span.titulo-pagina {
         font-size: 30px;
     }
@@ -554,11 +591,7 @@ iframe.video-hino {
     section.secao-patrocinadores {
         display: block;
     }
-
-    div.conteudo-flex {
-        flex: 100%;
-        max-width: 100%;
-    }
+   
 
     /* início da barra superior */
     .menu-barra-superior {
@@ -589,7 +622,7 @@ iframe.video-hino {
         width: 75px;
         height: 75px;
         margin-top: 150px;
-        margin-left: 40%;
+        margin-left: 42%;
         position: absolute;
     }
 
@@ -632,6 +665,7 @@ iframe.video-hino {
 
     div.menu {
         font-size: 18px;
+        display: none;
     }
 
     .barra_navegacao ul {
@@ -713,8 +747,9 @@ iframe.video-hino {
     /* início notícias */
     div.noticia {
         margin: 30px auto;
-        display: block;
+        display: flex;
         width: 90%;
+        margin-bottom:5%;
     }
 
     img.img-noticias {
@@ -726,11 +761,16 @@ iframe.video-hino {
         font-size: 14px;
         font-weight: 700;
         text-align: justify;
+        margin-bottom:5%;
     }
 
     div.chamada-noticia {
         width: 100%;
         border-bottom: 2px solid #E2BE76;
+    }
+
+    .noticia_carrosel h3 {
+        font-size: 14px;       
     }
 
     /* início patrocinadores */
@@ -745,6 +785,8 @@ iframe.video-hino {
         padding-top: 10px;
         padding-bottom: 0px;
     }
+
+    
 
     ul.menu-footer {
         display: none;

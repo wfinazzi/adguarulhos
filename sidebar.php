@@ -1,4 +1,4 @@
-<div class="patrocinadores-barra-lateral col-2">
+<div class="patrocinadores-barra-lateral col-md-3 col-sm-12">
     <?php query_posts(array('post_type' => array('patrocinadores'))); ?>
     <?php if(have_posts()): ?>
     <?php while(have_posts()): ?>

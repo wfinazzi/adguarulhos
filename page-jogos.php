@@ -7,7 +7,7 @@
 
 get_header(); ?>
     <div class="container d-flex">
-    <div class="conteudo-flex">
+    <div class="conteudo-flex col-md-9 col-sm-12">
         <section class="secao">
             <div class="row titulo-site">
                 <h1>
@@ -29,26 +29,21 @@ get_header(); ?>
                             <div class="card-header" id="headingOne">                                    
                                 <a class="btn btn-link" data-toggle="collapse" data-target="#collapse<?php echo $id?>" aria-expanded="false" aria-controls="collapseOne" style="width:100%">  
                                     <div class="d-flex">  
-                                        <div class="placar">
-                                            <span class="texto-card"><?php the_field('time_da_casa'); ?></span>
+                                        <div class="placar">                                            
                                             <img class="escudo" src="<?php the_field('escudo_da_casa'); ?>" />
+                                            <span class="texto-card"><?php the_field('time_da_casa'); ?></span>
+                                            <span class="texto-card-info"><?php the_field('estadio'); ?></span>
                                         </div>
                                         <div class="placar">
-                                            <span class="texto-card"><?php the_field('resultado_da_casa'); ?> x <?php the_field('resultado_visitante'); ?></span>
+                                            <span class="texto-card-placar"><?php the_field('resultado_da_casa'); ?> x <?php the_field('resultado_visitante'); ?></span>
                                         </div>
                                         <div class="placar">
                                             <img class="escudo" src="<?php the_field('escudo_do_visitante'); ?>" />
                                             <span class="texto-card"><?php the_field('time_visitante'); ?></span>
+                                            <span class="texto-card-info"><?php the_field('horario'); ?></span>
                                         </div>
                                     </div>    
-                                    <table class="bloco-inferior">
-                                        <td class="coluna">
-                                            <span class="texto-card-info"><?php the_field('estadio'); ?></span>
-                                        </td>
-                                        <td class="coluna">
-                                            <span class="texto-card-info"><?php the_field('horario'); ?></span>
-                                        </td>                                        
-                                    </table>   
+                                    
                                 </a>                                     
                             </div>                                  
                             <div id="collapse<?php echo $id?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">

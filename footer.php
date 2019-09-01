@@ -96,15 +96,9 @@
 
 
                 <div class="row footer-inferior">
-                    <ul class="menu-footer">
-                        <li>O Guarulhos</li>
-                        <li>Elenco</li>
-                        <li>Jogos</li>
-                        <li>Títulos</li>
-                        <li>Seja Sócio</li>
-                        <li>Grushop</li>
-                        <li>Torcida Jovem</li>
-                    </ul>
+                <?php wp_nav_menu(
+                        array('theme_location' => 'header_menu')
+                    ); ?>
                     <!-- Footer menu -->
                 </div>
                 <div class="row copyright">

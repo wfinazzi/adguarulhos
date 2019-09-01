@@ -6,9 +6,9 @@
 
 <div class="container d-flex">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <div class="conteudo-flex">
+        <div class="conteudo-flex col-md-9 col-sm-12">
             <section class="secao">
-            <article class="texto">
+                <article class="texto">
                     <article class="sub-texto">
                         <div class="row titulo-site">
                             <h1>
