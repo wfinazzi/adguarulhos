@@ -13,16 +13,16 @@ get_header(); ?>
                     <h1>
                         <span class="titulo-pagina"><?php the_title(); ?></span>
                     </h1>
-                </div>                
+                </div>
                 <div class="card-deck">
                     <?php query_posts( array(
                                 'post_type' => array( 'elenco', ),
                                 'posts_per_page' => -1,
                                 'orderby' => 'posicao',
                                 'order' => 'asc'                                
-                            ) );               
+                            ) );
                     ?>
-                        <?php if(have_posts()): while(have_posts()): the_post(); ?>                          
+                        <?php if(have_posts()): while(have_posts()): the_post(); ?>
                             <div class="col-md-4">
                                 <div class="card d-flex">
                                     <div class="image mx-5 my-2" style="height:200px; width:150px;">
@@ -42,10 +42,10 @@ get_header(); ?>
                                         <p class="card-text">
                                             <span>Posição:</span> <?php the_field('posicao'); ?>
                                         </p>
-                                    </div>                        
+                                    </div>
                                 </div>
                             </div>
-                        <?php endwhile; ?>    
+                        <?php endwhile; ?>
                         <?php else : ?>
                             Não há atletas cadastrados
                         <?php endif; ?>
@@ -53,6 +53,6 @@ get_header(); ?>
                 </div>
             </section>
         </div>
-        <?php get_sidebar(); ?>          
+        <?php get_sidebar(); ?>
     </div>
 <?php get_footer(); ?>
